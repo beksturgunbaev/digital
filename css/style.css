@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+
+#main_section header {
+  padding: 30px 0;
+}
+
+#main_section header .logo span {
+  font-family: 'Raleway-Regular';
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.5;
+  margin-left: 28px;
+}
+
+#main_section header .header_contacts .soc_link {
+  width: 50px;
+  height: 50px;
+  background: #0085FF;
+  margin-right: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#main_section header .header_contacts .soc_link:hover {
+  background: #4ba6fc;
+}
+
+#main_section header .header_contacts .header_phone {
+  margin-left: 20px;
+}
+
+#main_section header .header_contacts .header_phone a {
+  font-family: 'Raleway-Regular';
+  font-size: 24px;
+  line-height: 30px;
+  color: #373737;
+}
+
+#main_section header .header_contacts .header_phone span {
+  font-family: 'Raleway-Regular';
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.5;
+  position: relative;
+}
+
+#main_section header .header_contacts .header_phone span::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0085FF;
+}
+
+#main_section .main_content {
+  height: 75vh;
+}
+
+#main_section .main_content .left_content h2 {
+  font-family: 'Raleway-Bold';
+  font-size: 37px;
+  line-height: 54px;
+  color: #000;
+  max-width: 510px;
+}
+
+#main_section .main_content .left_content h2 span {
+  color: #fff;
+  background: #0085FF;
+  padding: 0 5px;
+}
+
+#main_section .main_content .left_content p {
+  font-family: 'Raleway-Regular';
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  opacity: 0.5;
+  max-width: 365px;
+  margin-top: 14px;
+}
+
+#main_section .main_content .left_content p span {
+  background: #0085FF;
+}
+
+#main_section .main_content .left_content button {
+  width: 380px;
+  height: 86px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2B6BF2), to(#2B6BF2));
+  background: linear-gradient(0deg, #2B6BF2, #2B6BF2);
+  -webkit-box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.5);
+          box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.5);
+  border-radius: 17px;
+  font-family: 'Raleway-Regular';
+  font-size: 18px;
+  line-height: 55px;
+  color: #FFFFFF;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 40px;
+}
+
+#main_section .main_content .left_content button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#2B6BF2), to(#2B6BF2));
+  background: linear-gradient(0deg, #2B6BF2, #2B6BF2);
+  -webkit-box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.9);
+          box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.9);
+}
+
+#main_section .main_content .left_content button svg {
+  margin: 3px 0 0 40px;
+}
+
+#main_section .main_content .right_content {
+  position: relative;
+}
+
+#main_section .main_content .right_content .abs_elem {
+  position: absolute;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  max-width: 288px;
+  width: 100%;
+  min-height: 90px;
+  padding: 0 20px;
+}
+
+#main_section .main_content .right_content .abs_elem h5 {
+  font-family: 'Raleway-Bold';
+  font-size: 16px;
+  line-height: 24px;
+  color: #5A5A5A;
+}
+
+#main_section .main_content .right_content .abs_elem p {
+  font-family: 'Raleway-Regular';
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  opacity: 0.4;
+}
+
+#main_section .main_content .right_content .abs_elem .icon {
+  margin-right: 20px;
+}
+
+#main_section .main_content .right_content .abs_elem1 {
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#main_section .main_content .right_content .abs_elem1 .icon {
+  background: #FFF3D2;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+#main_section .main_content .right_content .abs_elem2 {
+  top: 80px;
+  right: -52px;
+}
+
+#main_section .main_content .right_content .abs_elem3 {
+  bottom: 20px;
+  left: -50px;
+}
+
+#main_section .main_content .right_content .abs_elem4 {
+  bottom: 60px;
+  right: -20px;
+}
+
+#main_section .main_content .right_content .abs_elem4 .icon {
+  background: #FFF3D2;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+#second_section {
+  background: #E0E9FF;
+  padding-top: 70px;
+}
+
+#second_section h3 {
+  font-family: 'Raleway-Regular';
+  font-size: 34px;
+  line-height: 47px;
+  text-align: center;
+  color: #000000;
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+#second_section h3 strong {
+  font: 'Raleway-Bold';
+}
+
+#second_section h3 span {
+  font-family: 'Raleway-Bold';
+  color: #0085FF;
+}
+
+#second_section .telephone img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#second_section .telephone .answer_block {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 7px 60px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 7px 60px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(17px);
+          backdrop-filter: blur(17px);
+  border-radius: 15px;
+  max-width: 398px;
+  width: 100%;
+  min-height: 89px;
+  padding: 0 16px;
+  position: absolute;
+}
+
+#second_section .telephone .answer_block1 {
+  top: 10%;
+  left: 0;
+}
+
+#second_section .telephone .answer_block2 {
+  top: 38%;
+  left: 0;
+}
+
+#second_section .telephone .answer_block3 {
+  top: 65%;
+  left: 0;
+}
+
+#second_section .telephone .answer_block4 {
+  bottom: 0;
+  left: 0;
+}
+
+#second_section .telephone .answer_block5 {
+  top: 10%;
+  right: 0;
+}
+
+#second_section .telephone .answer_block6 {
+  top: 38%;
+  right: 0;
+}
+
+#second_section .telephone .answer_block7 {
+  top: 65%;
+  right: 0;
+}
+
+#second_section .telephone .answer_block8 {
+  bottom: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
