@@ -219,37 +219,47 @@ a {
             min-height: 89px;
             padding: 0 16px;
             position: absolute;
+            p {
+                font-family: 'Raleway-Bold';
+                font-size: 16px;
+                line-height: 25px;
+                color: #232323;
+                span {
+                    font-family: 'Raleway-Regular';
+                    color: #868686;
+                }
+            }
         }
         .answer_block1 {
-            top: 10%;
+            top: 0;
             left: 0;
         }
         .answer_block2 {
-            top: 38%;
+            top: 28%;
             left: 0;
         }
         .answer_block3 {
-            top: 65%;
+            top: 55%;
             left: 0;
         }
         .answer_block4 {
-            bottom: 0;
+            bottom: 10%;
             left: 0;
         }
         .answer_block5 {
-            top: 10%;
+            top: 0;
             right: 0;
         }
         .answer_block6 {
-            top: 38%;
+            top: 28%;
             right: 0;
         }
         .answer_block7 {
-            top: 65%;
+            top: 55%;
             right: 0;
         }
         .answer_block8 {
-            bottom: 0;
+            bottom: 10%;
             right: 0;
         }
     }
