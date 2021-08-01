@@ -254,3 +254,57 @@ a {
         }
     }
 }
+#third_section {
+    padding: 70px 0;
+    h3 {
+        font-family: 'Raleway-Regular';
+        font-size: 34px;
+        line-height: 47px;
+        text-align: center;
+        color: #000000;
+    }
+    .how_we_do_block {
+        max-width: 970px;
+        width: 100%;
+        margin: 30px auto 0;
+        min-height: 204px;
+        background: #F9E2EA;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        h4 {
+            font-family: 'Raleway-Regular';
+            font-size: 16px;
+            line-height: 47px;
+            text-align: center;
+            color: #000000;
+            margin-left: 20px;
+        }
+        ul {
+            margin: 20px 0 0 100px;
+            li {
+                font-family: 'Raleway-Regular';
+                font-size: 12px;
+                line-height: 20px;
+                color: #525252;
+                opacity: 0.7;
+            }
+        }
+        .icon1 {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #F7BFD0;
+        }
+        .icon2 {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #AAC7F6;
+        }
+    }
+    .blue_block {
+        background: #D4E4FD;
+    }
+}
