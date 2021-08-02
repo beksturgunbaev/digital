@@ -1,5 +1,10 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -213,9 +218,23 @@ a {
   right: -52px;
 }
 
+#main_section .main_content .right_content .abs_elem2 .icon {
+  background: #87D6F7;
+  border-radius: 10px;
+  width: 52px;
+  height: 52px;
+}
+
 #main_section .main_content .right_content .abs_elem3 {
   bottom: 20px;
   left: -50px;
+}
+
+#main_section .main_content .right_content .abs_elem3 .icon {
+  background: #87D6F7;
+  border-radius: 10px;
+  width: 52px;
+  height: 52px;
 }
 
 #main_section .main_content .right_content .abs_elem4 {

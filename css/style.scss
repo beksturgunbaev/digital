@@ -1,5 +1,9 @@
+html {
+    overflow-x: hidden;
+}
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -31,6 +35,15 @@ a {
     src: url(../fonts/Gilroy-Bold.ttf);
 }
 // end
+
+// Mixins for media queries:
+@mixin _1440px {
+    @media (max-width: 1440px) { @content; }
+}
+@mixin _1200px {
+    @media (max-width: 1200px) { @content; }
+}
+
 #main_section {
     height: 100vh;
     header {
@@ -176,10 +189,22 @@ a {
             .abs_elem2 {
                 top: 80px;
                 right: -52px;
+                .icon {
+                    background: #87D6F7;
+                    border-radius: 10px;
+                    width: 52px;
+                    height: 52px;
+                }
             }
             .abs_elem3 {
                 bottom: 20px;
                 left: -50px;
+                .icon {
+                    background: #87D6F7;
+                    border-radius: 10px;
+                    width: 52px;
+                    height: 52px;
+                }
             }
             .abs_elem4 {
                 bottom: 60px;
