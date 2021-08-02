@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/css/slick.css">
+    <link rel="stylesheet" href="./libs/css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Отдел контекстной рекламы по подписке</title>
 </head>
@@ -537,7 +539,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="safely_block">
-                        <div class="d-flex align-items-center">
+                        <div class="parent_cont d-flex align-items-center">
                             <img src="./img/safely1.png" alt="safely image" class="img-fluid">
                             <div class="w-100">
                                 <p class="d-flex justify-content-between align-items-center">Конфеденциальность<span>100%</span></p>
@@ -551,7 +553,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="safely_block">
-                        <div class="d-flex align-items-center">
+                        <div class="parent_cont d-flex align-items-center">
                             <img src="./img/safely2.png" alt="safely image" class="img-fluid">
                             <div class="w-100">
                                 <p class="d-flex justify-content-between align-items-center">Сохранность<span>100%</span></p>
@@ -565,7 +567,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="safely_block">
-                        <div class="d-flex align-items-center">
+                        <div class="parent_cont d-flex align-items-center">
                             <img src="./img/safely3.png" alt="safely image" class="img-fluid">
                             <div class="w-100">
                                 <p class="d-flex justify-content-between align-items-center">Соблюдение сроков<span>100%</span></p>
@@ -580,5 +582,292 @@
             </div>
         </div>
     </section>
+    <section id="reports_section">
+        <div class="container">
+            <h3>Предоставляем все отчеты</h3>
+            <div class="col-lg-10">
+            <div class="reports_container">
+                <img src="./img/graphic.png" class="img-fluid graphic_img" alt="Graphic">
+                <h5>
+                    <span>Вы будете видеть и понимать</span>, что было сделано и какие резульататы это дало. Вся работа прозрачна. 
+                    Все общение идет в рабочей группе напрямую с специалистом. Замеряем результат до и после. Ведем статистику. 
+                    Отчитываемся, что конкретно сделано каждый день/неделю/месяц
+                </h5>
+                <div class="block_top">
+                    <ul>
+                        <li>Суббота 31 авг. 2021 г.</li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+                                <path d="M1 3.5L4.5 7L10.5 1" stroke="#00FE9B" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Задача 1
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+                                <path d="M1 3.5L4.5 7L10.5 1" stroke="#00FE9B" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Задача 2
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+                                <path d="M1 3.5L4.5 7L10.5 1" stroke="#00FE9B" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Задача 3
+                        </li>
+                    </ul>
+                </div>
+                <div class="rating_txt">Коверсия 31%</div>
+                <div class="block_bottom">
+                    <ul>
+                        <li>Суббота</li>
+                        <li class="elem">
+                            Показы
+                            <span>51 985</span>
+                        </li>
+                        <li class="elem">
+                            Клики
+                            <span>411</span>
+                        </li>
+                        <li class="elem">
+                            Переходы
+                            <span>321</span>
+                        </li>
+                        <li class="elem">
+                            ROI
+                            <span>320%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="cases_setion">
+        <div class="container">
+            <h3>Наши кейсы</h3>
+            <div class="cases_slider">
+                <div class="cases_slide">
+                    <div class="d-flex">
+                        <div class="case_texts">
+                            <h4>Название проекта (Ниша)</h4>
+                            <h6>Задача:</h6>
+                            <p>У клиента было мало заявок , не было роста в бизнесе. Был ужасный сайт, который сливал 
+                                рекламный бюджет в никуда. 3-4 заявки раз в неделю.
+                            </p>
+                            <h6>Результат:</h6>
+                            <p>
+                                Запустили таргет на сайт , итого клиент за месяц  сотрудничества получил 
+                                <span>~ 14 000 000 тенге / 150 заявок , при бюджете в $200</span>
+                            </p>
+                        </div>
+                        <div class="case_img">
+                            <img src="./img/case.png" class="img-fluid" alt="case">
+                        </div>
+                    </div>
+                </div>
+                <div class="cases_slide">
+                    <div class="d-flex">
+                        <div class="case_texts">
+                            <h4>Название проекта (Ниша)</h4>
+                            <h6>Задача:</h6>
+                            <p>У клиента было мало заявок , не было роста в бизнесе. Был ужасный сайт, который сливал 
+                                рекламный бюджет в никуда. 3-4 заявки раз в неделю.
+                            </p>
+                            <h6>Результат:</h6>
+                            <p>
+                                Запустили таргет на сайт , итого клиент за месяц  сотрудничества получил 
+                                <span>~ 14 000 000 тенге / 150 заявок , при бюджете в $200</span>
+                            </p>
+                        </div>
+                        <div class="case_img">
+                            <img src="./img/case.png" class="img-fluid" alt="case">
+                        </div>
+                    </div>
+                </div>
+                <div class="cases_slide">
+                    <div class="d-flex">
+                        <div class="case_texts">
+                            <h4>Название проекта (Ниша)</h4>
+                            <h6>Задача:</h6>
+                            <p>У клиента было мало заявок , не было роста в бизнесе. Был ужасный сайт, который сливал 
+                                рекламный бюджет в никуда. 3-4 заявки раз в неделю.
+                            </p>
+                            <h6>Результат:</h6>
+                            <p>
+                                Запустили таргет на сайт , итого клиент за месяц  сотрудничества получил 
+                                <span>~ 14 000 000 тенге / 150 заявок , при бюджете в $200</span>
+                            </p>
+                        </div>
+                        <div class="case_img">
+                            <img src="./img/case.png" class="img-fluid" alt="case">
+                        </div>
+                    </div>
+                </div>
+                <div class="cases_slide">
+                    <div class="d-flex">
+                        <div class="case_texts">
+                            <h4>Название проекта (Ниша)</h4>
+                            <h6>Задача:</h6>
+                            <p>У клиента было мало заявок , не было роста в бизнесе. Был ужасный сайт, который сливал 
+                                рекламный бюджет в никуда. 3-4 заявки раз в неделю.
+                            </p>
+                            <h6>Результат:</h6>
+                            <p>
+                                Запустили таргет на сайт , итого клиент за месяц  сотрудничества получил 
+                                <span>~ 14 000 000 тенге / 150 заявок , при бюджете в $200</span>
+                            </p>
+                        </div>
+                        <div class="case_img">
+                            <img src="./img/case.png" class="img-fluid" alt="case">
+                        </div>
+                    </div>
+                </div>
+                <div class="cases_slide">
+                    <div class="d-flex">
+                        <div class="case_texts">
+                            <h4>Название проекта (Ниша)</h4>
+                            <h6>Задача:</h6>
+                            <p>У клиента было мало заявок , не было роста в бизнесе. Был ужасный сайт, который сливал 
+                                рекламный бюджет в никуда. 3-4 заявки раз в неделю.
+                            </p>
+                            <h6>Результат:</h6>
+                            <p>
+                                Запустили таргет на сайт , итого клиент за месяц  сотрудничества получил 
+                                <span>~ 14 000 000 тенге / 150 заявок , при бюджете в $200</span>
+                            </p>
+                        </div>
+                        <div class="case_img">
+                            <img src="./img/case.png" class="img-fluid" alt="case">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about_section">
+        <div class="container">
+            <div class="about_block d-flex">
+                <div class="about_text">
+                    <h3>Пара слов о нас</h3>
+                    <p><span>Мы предлагаем новый формат работы</span> с контекстной рекламой - отдел контекстной рекламы по подписке. 
+                        Современная компания для эффективного решения ваших задач по контекстной рекламе
+                        <br/><br/>
+                        За более чем 6 лет работы по контекстной рекламе наша команда успела поработать в разных форматах, как частные 
+                        специалисты, так и по агентсткой схеме. Поработав в разных форматах мы определили наиболее выгодный и удобный 
+                        формат для наших клиентов, и теперь работаем в формате по подписке, соединяя клиента напрямую с специалистом 
+                        по контекстной рекламе который все реализовывает, так же в рабочем чате вам доступны все специалисты отдела
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/about.png" alt="About us" class="img-fluid">
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section id="questions_section">
+        <div class="container">
+            <h3>Ответы на часто задаваемые вопросы</h3>
+            <button class="d-flex align-items-center justify-content-between acc_btn">
+                Какой-то длинный вопрос , на который наведен курсор
+                <span class="icon">+</span>
+            </button>
+            <div class="show_txt">
+                <p>
+                    <span>Мы предлагаем новый формат работы</span> с контекстной рекламой - отдел контекстной рекламы по подписке. Современная 
+                    компания для эффективного решения ваших задач по контекстной рекламе
+                </p>
+            </div>
+            <button class="d-flex align-items-center justify-content-between acc_btn purle_btn">
+                Какой-то длинный вопрос , на который наведен курсор
+                <span class="icon">+</span>
+            </button>
+            <div class="show_txt">
+                <p>
+                    <span>Мы предлагаем новый формат работы</span> с контекстной рекламой - отдел контекстной рекламы по подписке. Современная 
+                    компания для эффективного решения ваших задач по контекстной рекламе
+                </p>
+            </div>
+            <button class="d-flex align-items-center justify-content-between acc_btn green_btn">
+                Какой-то длинный вопрос , на который наведен курсор
+                <span class="icon">+</span>
+            </button>
+            <div class="show_txt">
+                <p>
+                    <span>Мы предлагаем новый формат работы</span> с контекстной рекламой - отдел контекстной рекламы по подписке. Современная 
+                    компания для эффективного решения ваших задач по контекстной рекламе
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="form_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h5>Предложим 3 нестандартных решения вашей задачи
+                        по контекстной рекламе уже сегодня
+                    </h5>
+                </div>
+                <div class="col-lg-8">
+                    <form action="">
+                        <div class="row justify-content-end">
+                            <input class="input_field" type="text" placeholder="Ваше имя" required>
+                            <input class="input_field" type="tel" placeholder="+7 (___) ___-__-__" required>
+                            <button type="submit">Отправить завку</button>
+                            <div class="select_block d-flex align-items-center">
+                                <input type="checkbox">
+                                <p>Я согласен (согласна) на обработку моих <a href="#">персональных данных</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="footer_logo d-flex align-items-center">
+                        <a href="./">
+                            <img src="./img/footer-logo.png" alt="Logo" class="img-fluid">
+                        </a>
+                        <span>Отдел контекстной рекламы <br/>по подписке</span>
+                    </div>
+                    <p class="footer_txt">
+                        © Название 2015-2021 - настройка, ведение и оптимизация <br/>контекстной рекламы Яндекс.Директ и Google Ads
+                        <br/><br/>Копирование контента запрещено
+                    </p>
+                </div>
+                <div class="col-lg-3 privacy_policy">
+                    <a class="privacy_link" href="#">Политика <br/>конфиденциальности</a>
+                    <div class="footer_links d-flex mt-5">
+                        <a class="d-flex justify-content-center align-items-center" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="13" viewBox="0 0 21 13" fill="none">
+                                <path d="M17.4256 7.3995C17.0861 6.97075 17.1833 6.78 17.4256 6.39675C17.43 6.39238 20.2326 2.51963 20.5214 1.20625L20.5231 1.20538C20.6666 0.72675 20.5231 0.375 19.8293 0.375H17.5333C16.9488 0.375 16.6793 0.676875 16.5349 1.01463C16.5349 1.01463 15.3659 3.81288 13.7121 5.62675C13.1784 6.15088 12.9316 6.31888 12.6403 6.31888C12.4968 6.31888 12.2736 6.15088 12.2736 5.67225V1.20538C12.2736 0.631375 12.11 0.375 11.6261 0.375H8.01588C7.64925 0.375 7.43138 0.64275 7.43138 0.892125C7.43138 1.43638 8.25825 1.5615 8.344 3.09275V6.41513C8.344 7.14313 8.21188 7.277 7.91875 7.277C7.13825 7.277 5.24388 4.46738 4.12125 1.25175C3.89463 0.627875 3.67325 0.375875 3.08438 0.375875H0.7875C0.132125 0.375875 0 0.67775 0 1.0155C0 1.61225 0.7805 4.57938 3.6295 8.49938C5.52825 11.1751 8.20225 12.625 10.6348 12.625C12.0969 12.625 12.2754 12.303 12.2754 11.7491C12.2754 9.19238 12.1433 8.95088 12.8756 8.95088C13.2151 8.95088 13.7996 9.11888 15.1646 10.4095C16.7248 11.9399 16.9811 12.625 17.8544 12.625H20.1504C20.8049 12.625 21.1365 12.303 20.9458 11.6678C20.5091 10.3316 17.5586 7.58325 17.4256 7.3995Z" fill="#232F45"/>
+                            </svg>
+                        </a>
+                        <a class="d-flex justify-content-center align-items-center" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.9797 6.17406C20.9305 5.05825 20.75 4.29114 20.4916 3.62643C20.2249 2.92085 19.8147 2.28915 19.2772 1.76402C18.7521 1.23071 18.1162 0.816306 17.4188 0.553819C16.7502 0.295338 15.9871 0.114898 14.8713 0.0657019C13.7472 0.0123391 13.3903 0 10.5392 0C7.68802 0 7.33114 0.0123391 6.21117 0.0615355C5.09535 0.110732 4.32824 0.291332 3.66369 0.549653C2.95796 0.816306 2.32626 1.22654 1.80113 1.76402C1.26782 2.28915 0.853576 2.92502 0.590928 3.62242C0.332447 4.29114 0.152008 5.05408 0.102811 6.16989C0.0494485 7.29403 0.0371094 7.65091 0.0371094 10.5021C0.0371094 13.3532 0.0494485 13.7101 0.0986448 14.83C0.147841 15.9459 0.328441 16.713 0.586922 17.3777C0.853576 18.0833 1.26782 18.715 1.80113 19.2401C2.32626 19.7734 2.96213 20.1878 3.65953 20.4503C4.32824 20.7088 5.09119 20.8892 6.20716 20.9384C7.32698 20.9878 7.68401 20.9999 10.5352 20.9999C13.3863 20.9999 13.7432 20.9878 14.8631 20.9384C15.979 20.8892 16.7461 20.7088 17.4106 20.4503C18.8219 19.9046 19.9377 18.7888 20.4834 17.3777C20.7417 16.709 20.9223 15.9459 20.9715 14.83C21.0207 13.7101 21.033 13.3532 21.033 10.5021C21.033 7.65091 21.0289 7.29403 20.9797 6.17406ZM19.0886 14.748C19.0434 15.7736 18.8711 16.3274 18.7275 16.6966C18.3747 17.6115 17.6486 18.3376 16.7337 18.6904C16.3645 18.834 15.8067 19.0063 14.7851 19.0513C13.6775 19.1007 13.3453 19.1128 10.5433 19.1128C7.74138 19.1128 7.40502 19.1007 6.30138 19.0513C5.27579 19.0063 4.72198 18.834 4.35276 18.6904C3.8975 18.5222 3.48309 18.2555 3.14673 17.9068C2.79803 17.5663 2.53138 17.1561 2.36312 16.7008C2.21953 16.3316 2.04727 15.7736 2.00224 14.7522C1.95288 13.6445 1.9407 13.3122 1.9407 10.5102C1.9407 7.70828 1.95288 7.37192 2.00224 6.26844C2.04727 5.24285 2.21953 4.68903 2.36312 4.31982C2.53138 3.86439 2.79803 3.45015 3.1509 3.11363C3.49127 2.76493 3.9015 2.49828 4.35693 2.33017C4.72614 2.18659 5.28413 2.01432 6.30555 1.96913C7.41319 1.91994 7.74554 1.9076 10.5473 1.9076C13.3534 1.9076 13.6856 1.91994 14.7893 1.96913C15.8149 2.01432 16.3687 2.18659 16.7379 2.33017C17.1932 2.49828 17.6076 2.76493 17.9439 3.11363C18.2926 3.45416 18.5593 3.86439 18.7275 4.31982C18.8711 4.68903 19.0434 5.24686 19.0886 6.26844C19.1378 7.37608 19.1501 7.70828 19.1501 10.5102C19.1501 13.3122 19.1378 13.6404 19.0886 14.748Z" fill="#232F45"/>
+                                <path d="M10.5391 5.10742C7.56092 5.10742 5.14453 7.52365 5.14453 10.502C5.14453 13.4804 7.56092 15.8966 10.5391 15.8966C13.5175 15.8966 15.9337 13.4804 15.9337 10.502C15.9337 7.52365 13.5175 5.10742 10.5391 5.10742ZM10.5391 14.0014C8.60702 14.0014 7.03979 12.4343 7.03979 10.502C7.03979 8.56975 8.60702 7.00268 10.5391 7.00268C12.4714 7.00268 14.0385 8.56975 14.0385 10.502C14.0385 12.4343 12.4714 14.0014 10.5391 14.0014Z" fill="#232F45"/>
+                                <path d="M17.4062 4.89416C17.4062 5.58964 16.8422 6.15355 16.1466 6.15355C15.4511 6.15355 14.8872 5.58964 14.8872 4.89416C14.8872 4.19852 15.4511 3.63477 16.1466 3.63477C16.8422 3.63477 17.4062 4.19852 17.4062 4.89416Z" fill="#232F45"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer_contacts">
+                    <a class="footer_phone" href="tel:+7 (099) 099-99-99">+7 (099) 099-99-99</a><br/>
+                    <span>Сейчас работаем</span>
+                    <p>г.Москва ул. Коломенская 1</p>
+                    <a href="#" class="email">info@site.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============= Scripts ================= -->
+    <script src="./libs/js/jquery.js"></script>
+    <script src="./libs/js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
