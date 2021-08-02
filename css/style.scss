@@ -22,6 +22,14 @@ a {
     font-family: 'Raleway-Regular';
     src: url(../fonts/Raleway-Regular.ttf);
 }
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
 // end
 #main_section {
     header {
@@ -316,5 +324,287 @@ a {
     }
     .blue_block {
         background: #D4E4FD;
+    }
+    .show_more {
+        margin-top: 50px;
+        button {
+            font-family: 'Raleway-Bold';
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.265em;
+            text-transform: uppercase;
+            color: #888888;
+            border: none;
+            margin-left: 10px;
+            padding: 4px 7px;
+            background: transparent;
+            border-bottom: 3px solid #eeeeee;
+            transition: .2s;
+            &:hover {
+                border-bottom: 3px solid #dbdada;
+            }
+        }
+    }
+}
+#cost_section {
+    padding: 70px 0;
+    background: #F8F8F8;
+    h3 {
+        font-family: 'Raleway-Regular';
+        font-size: 34px;
+        line-height: 47px;
+        text-align: center;
+        color: #000000;
+    }
+    p {
+        font-family: 'Raleway-Regular';
+        font-size: 18px;
+        line-height: 29px;
+        margin: 7px auto 0;
+        text-align: center;
+        color: #8E8E8E;
+        max-width: 600px;
+    }
+    .card {
+        max-width: 400px;
+        width: 100%;
+        margin: 40px 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 40px;
+        border-top: 5px solid #01FF9D;
+        h4 {
+            font-family: 'Raleway-Bold';
+            font-size: 20px;
+            line-height: 31px;
+            color: #575757;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+        }
+        .online_icon {
+            width: 19px !important;
+            height: 19px !important;
+            border-radius: 50%;
+            background: rgba(0, 133, 255,.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 20px 20px 0;
+            span {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: rgba(0, 133, 255, .5);
+            }
+        }
+        p {
+            max-width: 270px;
+            text-align: left;
+            margin: 0;
+            font-family: 'Gilroy-Regular';
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            opacity: 0.5;
+        }
+        .cost {
+            font-family: 'Gilroy-Bold';
+            font-size: 42px;
+            line-height: 118.3%;
+            color: #404040;
+            margin: 30px 0;
+            text-align: center;
+        }
+        button {
+            width: 300px;
+            height: 65px;
+            background: #2B6BF2;
+            border-radius: 17px;
+            text-align: center;
+            border: none;
+            color: #fff;
+            font-family: 'Raleway-Regular';
+            font-size: 14px;
+            line-height: 55px;
+            transition: .3s;
+            &:hover {
+                box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.9);
+            }
+        }
+    }
+    .card_two {
+        border-top: 5px solid #FFBF00;
+    }
+}
+#bonuses_section {
+    padding: 90px 0;
+    .bonuses_block {
+        width: 100%;
+        min-height: 145px;
+        background: #F7F7F7;
+        border-radius: 5px;
+        margin: 2px 0;
+        display: flex;
+        align-items: center;
+        h6 {
+            font-family: 'Raleway-Regular';
+            font-size: 20px;
+            line-height: 36px;
+            color: #000000;
+            padding: 20px 24px;
+            span {
+                font-family: 'Raleway-Bold';
+                color: #0085FF;
+            }
+        }
+    }
+}
+#department_section {
+    padding: 70px 0;
+    h3 {
+        font-family: 'Raleway-Regular';
+        font-size: 34px;
+        line-height: 47px;
+        text-align: center;
+        color: #000000;
+    }
+    .smile_block {
+        max-width: 1140px;
+        width: 100%;
+        min-height: 90px;
+        background: #F6F9FF;
+        border-radius: 19px;
+        padding: 10px 30px;
+        margin: 40px auto 90px;
+        -moz-box-shadow:0 20px 50px -20px rgba(182, 182, 182, 0.75);
+        -webkit-box-shadow: 0 20px 50px -20px rgba(182, 182, 182, 0.75);
+        box-shadow: 0 20px 50px -20px rgba(182, 182, 182, 0.75);
+        .smile {
+            min-width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #D3E5FE;
+        }
+        h6 {
+            font-family: 'Raleway-Regular';
+            font-size: 14px;
+            line-height: 186.9%;
+            color: #463D73;
+            max-width: 800px;
+            margin-left: 20px;
+            span {
+                font-family: 'Raleway-Bold';
+            }
+        }
+    }   
+    .department_block {
+        max-width: 350px;
+        width: 100%;
+        padding: 40px;
+        min-height: 265px;
+        margin: 20px;
+        background: #353535;
+        border-radius: 12px;
+        position: relative;
+        color: #ECECEC;
+        img {
+            position: absolute;
+            top: -40px;
+            right: 7px;
+        }
+        h4 {
+            font-family: 'Raleway-Bold';
+            font-size: 18px;
+            line-height: 21px;
+            max-width: 182px;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        p {
+            max-width: 238px;
+            font-family: 'Raleway-Regular';
+            font-size: 14px;
+            line-height: 169.4%;
+            margin-top: 10px;
+        }
+    }
+}
+#google_ads_section {
+    background: linear-gradient(274.15deg, #FECDE7 -7.01%, #BCE6F4 101.1%);
+    padding: 70px 0 0;
+    text-align: center;
+    position: relative;
+    .google_ads_img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40%;
+        z-index: 0;
+    }
+    h3 {
+        font-family: 'Raleway-Regular';
+        font-size: 34px;
+        line-height: 47px;
+        text-align: center;
+        color: #353535;
+        max-width: 653px;
+        margin: 0 auto;
+        strong {
+            font-family: 'Raleway-Bold';
+        }
+    }
+    p {
+        font-family: 'Raleway-Bold';
+        font-size: 14px;
+        line-height: 47px;
+        color: #353535;
+    }
+    .googleAds_block {
+        .block_one {
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.51) 0%, rgba(255, 255, 255, 0.5) 100%);
+            backdrop-filter: blur(40px);
+            border-radius: 15px;
+            max-width: 480px;
+            width: 100%;
+            padding: 40px;
+            min-height: 487px;
+            color: #353535;
+            text-align: left;
+            h6 {
+                font-family: 'Raleway-Regular';
+                font-size: 20px;
+                line-height: 36px;
+            }
+            ul {
+                li {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 16px;
+                    line-height: 139.5%;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0 10px 10px;
+                    span {
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        background: rgba(0, 0, 0, 0.2);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 16px;
+                        i {
+                            width: 6px;
+                            height: 6px;
+                            background: #353535;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
