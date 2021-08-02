@@ -59,9 +59,9 @@ a {
             .header_phone {
                 margin-left: 20px;
                 a {
-                    font-family: 'Raleway-Regular';
+                    font-family: 'Gilroy-Regular';
                     font-size: 24px;
-                    line-height: 30px;
+                    line-height: 34px;
                     color: #373737;
                 }
                 span {
@@ -204,7 +204,7 @@ a {
         text-align: center;
         color: #000000;
         max-width: 790px;
-        margin: 0 auto;
+        margin: 0 auto 67px;
         strong {
             font: 'Raleway-Bold';
         }
@@ -215,23 +215,23 @@ a {
     }
     .telephone {
         img {
-            width: 70%;
+            width: 30%;
             margin: 0 auto;
         }
         .answer_block {
-            background: rgba(255, 255, 255, 0.5);
-            box-shadow: 0px 7px 60px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(17px);
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 7px 24px rgba(0, 0, 0, .2);
             border-radius: 15px;
-            max-width: 398px;
+            max-width: 355px;
             width: 100%;
-            min-height: 89px;
-            padding: 0 16px;
-            position: absolute;
+            margin: 25px 0;
+            min-height: 80px;
+            padding: 16px;
+            text-align: left;
             p {
                 font-family: 'Raleway-Bold';
                 font-size: 16px;
-                line-height: 25px;
+                line-height: 21px;
                 color: #232323;
                 span {
                     font-family: 'Raleway-Regular';
@@ -239,37 +239,15 @@ a {
                 }
             }
         }
-        .answer_block1 {
-            top: 0;
-            left: 0;
+        .tel_block_left {
+            position: absolute;
+            top: 40px;
+            left: 16%;
         }
-        .answer_block2 {
-            top: 28%;
-            left: 0;
-        }
-        .answer_block3 {
-            top: 55%;
-            left: 0;
-        }
-        .answer_block4 {
-            bottom: 10%;
-            left: 0;
-        }
-        .answer_block5 {
-            top: 0;
-            right: 0;
-        }
-        .answer_block6 {
-            top: 28%;
-            right: 0;
-        }
-        .answer_block7 {
-            top: 55%;
-            right: 0;
-        }
-        .answer_block8 {
-            bottom: 10%;
-            right: 0;
+        .tel_block_right {
+            position: absolute;
+            top: 50px;
+            right: 16%;
         }
     }
 }
