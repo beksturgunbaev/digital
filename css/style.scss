@@ -77,9 +77,17 @@ a {
                     line-height: 14px;
                     margin-left: 10px;
                 }
+                @include _576px() {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 30px;
+                }
             }
         }
         .header_contacts {
+            @include _576px() {
+                margin-top: 16px;
+            }
             .soc_link {
                 width: 50px;
                 height: 50px;
@@ -106,6 +114,11 @@ a {
                     }
                     @include _768px() {
                         font-size: 18px;
+                    }
+                    @include _576px() {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 19px;
+                        line-height: 24px;
                     }
                 }
                 span {
@@ -143,6 +156,10 @@ a {
                 max-width: 510px;
                 @include _992px() {
                     margin: 30px auto 0;
+                }
+                @include _576px() {
+                    font-size: 28px;
+                    line-height: 40px;
                 }
                 span {
                     color: #fff;
@@ -210,6 +227,11 @@ a {
                     padding: 10px 14px;
                     max-width: 260px;
                 }
+                @include _576px() {
+                    max-width: inherit;
+                    width: auto;
+                    padding: 10px 20px;
+                }
                 h5 {
                     font-family: 'Raleway-Bold';
                     font-size: 16px;
@@ -253,6 +275,9 @@ a {
                 @include _1440px() {
                     top: 50px;
                     right: -10px;
+                    @include _768px() {
+                        right: 0;
+                    }
                 }
                 .icon {
                     background: #87D6F7;
@@ -262,6 +287,9 @@ a {
             .abs_elem3 {
                 bottom: 20px;
                 left: -50px;
+                @include _768px() {
+                    left: 0;
+                }
                 .icon {
                     background: #87D6F7;
                     border-radius: 10px;
@@ -287,7 +315,7 @@ a {
 }
 #second_section {
     background: #E0E9FF;
-    padding-top: 70px;
+    padding: 70px 0;
     h3 {
         font-family: 'Raleway-Regular';
         font-size: 34px;
@@ -299,6 +327,10 @@ a {
         @include _1440px() {
             font-size: 26px;
             line-height: 40px;
+        }
+        @include _576px() {
+            font-size: 21px;
+            line-height: 32px;
         }
         strong {
             font: 'Raleway-Bold';
@@ -315,6 +347,9 @@ a {
             @include _1440px() {
                 width: 36%;
             }
+            @include _992px() {
+                display: none;
+            }
         }
         .answer_block {
             background: rgba(255, 255, 255, 0.7);
@@ -326,6 +361,9 @@ a {
             min-height: 80px;
             padding: 16px;
             text-align: left;
+            @include _992px() {
+                margin: 25px auto;
+            }
             p {
                 font-family: 'Raleway-Bold';
                 font-size: 16px;
@@ -341,11 +379,22 @@ a {
             position: absolute;
             top: 40px;
             left: 16%;
+            @include _992px() {
+                position: inherit;
+                top: auto;
+                left: auto;
+            }
         }
         .tel_block_right {
             position: absolute;
             top: 50px;
             right: 16%;
+            @include _992px() {
+                position: inherit;
+                top: auto;
+                left: auto;
+                right: auto;
+            }
         }
     }
 }
@@ -368,6 +417,12 @@ a {
         display: flex;
         align-items: center;
         padding: 30px;
+        .mob_extra {
+            @include _768px() {
+                flex-direction: column;
+                align-items: flex-start !important;
+            }  
+        }
         h4 {
             font-family: 'Raleway-Regular';
             font-size: 16px;
@@ -375,9 +430,18 @@ a {
             text-align: center;
             color: #000000;
             margin-left: 20px;
+            @include _768px() {
+                text-align: left;
+                margin-left: 0;
+                line-height: 24px;
+                margin-top: 10px;
+            }
         }
         ul {
             margin: 20px 0 0 100px;
+            @include _768px() {
+                margin-left: 16px;
+            }
             li {
                 font-family: 'Raleway-Regular';
                 font-size: 12px;
@@ -451,6 +515,9 @@ a {
         border-radius: 10px;
         padding: 40px;
         border-top: 5px solid #01FF9D;
+        @include _992px() {
+            margin: 40px auto;
+        }
         h4 {
             font-family: 'Raleway-Bold';
             font-size: 20px;
@@ -520,6 +587,12 @@ a {
 }
 #bonuses_section {
     padding: 90px 0;
+    .bonuses_img {
+        @include _992px() {
+            justify-content: center !important;
+            margin-bottom: 10px;
+        }
+    }
     .bonuses_block {
         width: 100%;
         min-height: 145px;
@@ -528,12 +601,24 @@ a {
         margin: 2px 0;
         display: flex;
         align-items: center;
+        @include _1200px() {
+            min-height: 110px;
+        }
+        @include _992px() {
+            padding: 0 25px;
+            margin-top: 20px;
+        }
         h6 {
             font-family: 'Raleway-Regular';
             font-size: 20px;
             line-height: 36px;
             color: #000000;
             padding: 20px 24px;
+            @include _1200px() {
+                font-size: 18px;
+                line-height: 25px;
+                padding: 10px 14px;
+            }
             span {
                 font-family: 'Raleway-Bold';
                 color: #0085FF;
@@ -593,6 +678,9 @@ a {
             max-width: 320px;
             padding: 40px 30px 30px;
         }
+        @include _768px() {
+            max-width: 94%;
+        }
         img {
             position: absolute;
             top: -40px;
@@ -627,6 +715,9 @@ a {
         left: 0;
         width: 40%;
         z-index: 0;
+        @include _1200px() {
+            display: none;
+        }
     }
     .gmail_img {
         position: absolute;
@@ -635,6 +726,9 @@ a {
         z-index: 0;
         @include _1440px() {
             right: 20px;
+        }
+        @include _1200px() {
+            display: none;
         }
     }
     h3 {
@@ -671,6 +765,10 @@ a {
                 max-width: 380px;
                 padding: 30px 20px;
                 min-height: 540px;
+            }
+            @include _1200px() {
+                max-width: 100%;
+                min-height: auto;
             }
             h5 {
                 font-family: 'Raleway-Regular';
@@ -717,6 +815,9 @@ a {
                 padding: 40px 20px 30px 30px;
                 max-width: 740px;
             }
+            @include _1200px() {
+                max-width: 100%;
+            }
             h5 {
                 font-family: 'Raleway-Regular';
                 font-size: 20px;
@@ -727,6 +828,16 @@ a {
                 border-bottom: 1px solid rgba(0, 0, 0, .05);
             }   
             .desc_block {
+                .d-flex {
+                    @include _768px() {
+                        flex-direction: column;
+                    }
+                }
+                .mob_class {
+                    @include _768px() {
+                        text-align: center;
+                    }
+                }
                 .first_ul {
                     margin-right: 40px;
                     @include _1440px() {
@@ -751,6 +862,10 @@ a {
                     min-height: 96px;
                     margin: 60px 0 0;
                     padding-left: 35px;
+                    @include _768px() {
+                        margin: 50px auto 0;
+                        padding: 0;
+                    }
                     h4 {
                         font-family: 'Gilroy-Bold';
                         font-size: 42px;
@@ -770,11 +885,25 @@ a {
                         position: absolute;
                         bottom: 40px;
                         left: -40px;
+                        @include _768px() {
+                            bottom: 0;
+                            left: 0;
+                        }
                     }
                     .img_two {
                         position: absolute;
                         top: 20px;
                         right: 40px;
+                        @include _768px() {
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+                .cost_txt {
+                    @include _768px() {
+                        flex-direction: row;
+                        justify-content: center;
                     }
                 }
                 button {
@@ -829,6 +958,11 @@ a {
         border-radius: 20px;
         min-height: 300px;
         box-shadow: 5px 50px 40px -44px rgba(182, 182, 182, 75%);
+        @include _992px() {
+            margin: 30px 0;
+            min-height: auto;
+            padding: 40px;
+        }
         .parent_cont {
             height: 40px;
         }
@@ -877,6 +1011,9 @@ a {
         margin: 0 auto;
         padding: 60px;
         position: relative;
+        @include _1200px() {
+            padding: 40px 170px 0 30px;
+        }
         .rating_txt {
             font-family: 'Raleway-Regular';
             font-size: 14px;
@@ -1164,6 +1301,9 @@ a {
         font-family: 'Raleway-Regular';
         font-size: 24px;
         line-height: 44px;
+        @include _992px() {
+            margin-bottom: 20px;
+        }
     }
     form {
         .input_field,
@@ -1186,6 +1326,14 @@ a {
             &:focus {
                 outline: none;
             }
+            @include _768px() {
+                max-width: 100%;
+            }
+        }
+        .row {
+            @include _1200px() {
+                justify-content: center !important;
+            }
         }
         button {
             background:#2B6BF2;
@@ -1198,6 +1346,10 @@ a {
         .select_block {
             max-width: 328px;
             margin: 10px 15px;
+            @include _768px() {
+                max-width: 100%;
+                margin-top: 20px;
+            }
             input {
                 transform: scale(2);
                 margin-right: 21px;
