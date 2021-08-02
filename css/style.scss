@@ -43,9 +43,22 @@ a {
 @mixin _1200px {
     @media (max-width: 1200px) { @content; }
 }
+@mixin _992px {
+    @media (max-width: 992px) { @content; }
+}
+@mixin _768px {
+    @media (max-width: 768px) { @content; }
+}
+@mixin _576px {
+    @media (max-width: 576px) { @content; }
+}
 
 #main_section {
     height: 100vh;
+    @include _992px() {
+        height: auto;
+        padding-bottom: 70px;
+    }
     header {
         padding: 30px 0;
         .logo {
@@ -56,6 +69,14 @@ a {
                 color: #000000;
                 opacity: 0.5;
                 margin-left: 28px;
+                @include _992px() {
+                    line-height: 18px;
+                }
+                @include _768px() {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-left: 10px;
+                }
             }
         }
         .header_contacts {
@@ -68,6 +89,10 @@ a {
                 &:hover {
                     background: #4ba6fc;
                 }
+                @include _992px() {
+                    width: 45px;
+                    height: 45px;
+                }
             }
             .header_phone {
                 margin-left: 20px;
@@ -76,6 +101,12 @@ a {
                     font-size: 24px;
                     line-height: 34px;
                     color: #373737;
+                    @include _992px() {
+                        font-size: 21px;
+                    }
+                    @include _768px() {
+                        font-size: 18px;
+                    }
                 }
                 span {
                     font-family: 'Raleway-Regular';
@@ -100,6 +131,9 @@ a {
     }
     .main_content {
         height: 80vh;
+        @include _992px() {
+            height: auto;
+        }
         .left_content {
             h2 {
                 font-family: 'Raleway-Bold';
@@ -107,10 +141,16 @@ a {
                 line-height: 54px;
                 color: #000;
                 max-width: 510px;
+                @include _992px() {
+                    margin: 30px auto 0;
+                }
                 span {
                     color: #fff;
                     background: #0085FF;
                     padding: 0 5px;
+                }
+                @include _992px() {
+                    text-align: center;
                 }
             }
             p {
@@ -121,6 +161,10 @@ a {
                 opacity: 0.5;
                 max-width: 365px;
                 margin-top: 14px;
+                @include _992px() {
+                    margin: 20px auto;
+                    text-align: center;
+                }
                 span {
                     background: #0085FF;
                 }
@@ -142,6 +186,9 @@ a {
                     background: linear-gradient(0deg, #2B6BF2, #2B6BF2);
                     box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.9);
                 }
+                @include _992px() {
+                    display: none !important;
+                }
                 svg {
                     margin: 3px 0 0 40px;
                 }
@@ -158,11 +205,20 @@ a {
                 width: 100%;
                 min-height: 90px;
                 padding: 0 20px;
+                @include _1200px() {
+                    min-height: auto;
+                    padding: 10px 14px;
+                    max-width: 260px;
+                }
                 h5 {
                     font-family: 'Raleway-Bold';
                     font-size: 16px;
                     line-height: 24px;
                     color: #5A5A5A;
+                    @include _1200px() {
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
                 }
                 p {
                     font-family: 'Raleway-Regular';
@@ -170,6 +226,10 @@ a {
                     line-height: 16px;
                     color: #000000;
                     opacity: 0.4;
+                    @include _1200px() {
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
                 }
                 .icon {
                     margin-right: 20px;
@@ -179,21 +239,24 @@ a {
                 top: 0;
                 left: 0;
                 z-index: -1;
+                @include _992px() {
+                    display: none !important;
+                }
                 .icon {
                     background: #FFF3D2;
-                    width: 52px;
-                    height: 52px;
                     border-radius: 50%;
                 }
             }
             .abs_elem2 {
                 top: 80px;
                 right: -52px;
+                @include _1440px() {
+                    top: 50px;
+                    right: -10px;
+                }
                 .icon {
                     background: #87D6F7;
                     border-radius: 10px;
-                    width: 52px;
-                    height: 52px;
                 }
             }
             .abs_elem3 {
@@ -202,17 +265,20 @@ a {
                 .icon {
                     background: #87D6F7;
                     border-radius: 10px;
-                    width: 52px;
-                    height: 52px;
                 }
             }
             .abs_elem4 {
                 bottom: 60px;
                 right: -20px;
+                @include _992px() {
+                    display: none !important;
+                }
+                @include _1440px() {
+                    bottom: 90px;
+                    right: 0px;
+                }
                 .icon {
                     background: #FFF3D2;
-                    width: 52px;
-                    height: 52px;
                     border-radius: 50%;
                 }
             }
@@ -230,6 +296,10 @@ a {
         color: #000000;
         max-width: 790px;
         margin: 0 auto 67px;
+        @include _1440px() {
+            font-size: 26px;
+            line-height: 40px;
+        }
         strong {
             font: 'Raleway-Bold';
         }
@@ -242,6 +312,9 @@ a {
         img {
             width: 30%;
             margin: 0 auto;
+            @include _1440px() {
+                width: 36%;
+            }
         }
         .answer_block {
             background: rgba(255, 255, 255, 0.7);
@@ -420,6 +493,9 @@ a {
             color: #404040;
             margin: 30px 0;
             text-align: center;
+            @include _1440px() {
+                font-size: 30px;
+            }
         }
         button {
             width: 300px;
@@ -513,6 +589,10 @@ a {
         border-radius: 12px;
         position: relative;
         color: #ECECEC;
+        @include _1440px() {
+            max-width: 320px;
+            padding: 40px 30px 30px;
+        }
         img {
             position: absolute;
             top: -40px;
@@ -553,6 +633,9 @@ a {
         top: 240px;
         right: 100px;
         z-index: 0;
+        @include _1440px() {
+            right: 20px;
+        }
     }
     h3 {
         font-family: 'Raleway-Regular';
@@ -584,6 +667,11 @@ a {
             min-height: 600px;
             color: #353535;
             text-align: left;
+            @include _1440px() {
+                max-width: 380px;
+                padding: 30px 20px;
+                min-height: 540px;
+            }
             h5 {
                 font-family: 'Raleway-Regular';
                 font-size: 20px;
@@ -622,9 +710,13 @@ a {
             min-height: 630px;
             background: #FFFFFF;
             border-radius: 15px 15px 0 0;
-            padding: 70px 40px 40px 80px;
+            padding: 60px 40px 40px 60px;
             text-align: left;
             z-index: 1;
+            @include _1440px() {
+                padding: 40px 20px 30px 30px;
+                max-width: 740px;
+            }
             h5 {
                 font-family: 'Raleway-Regular';
                 font-size: 20px;
@@ -635,8 +727,11 @@ a {
                 border-bottom: 1px solid rgba(0, 0, 0, .05);
             }   
             .desc_block {
-                .mleft {
-                    margin-left: 30px;
+                .first_ul {
+                    margin-right: 40px;
+                    @include _1440px() {
+                        margin-right: 20px;
+                    }
                 }
                 ul {
                     li {
@@ -654,8 +749,8 @@ a {
                     position: relative;
                     width: 350px;
                     min-height: 96px;
-                    margin: 30px auto 0;
-                    padding-left: 80px;
+                    margin: 60px 0 0;
+                    padding-left: 35px;
                     h4 {
                         font-family: 'Gilroy-Bold';
                         font-size: 42px;
@@ -669,16 +764,17 @@ a {
                         font-size: 20px;
                         line-height: 36px;
                         color: #0085FF;
+                        margin-bottom: 0;
                     }
                     .img_one {
                         position: absolute;
-                        bottom: 0;
-                        left: 0;
+                        bottom: 40px;
+                        left: -40px;
                     }
                     .img_two {
                         position: absolute;
-                        top: 0;
-                        right: 0;
+                        top: 20px;
+                        right: 40px;
                     }
                 }
                 button {
@@ -877,10 +973,17 @@ a {
         background: #EFF8FF;
         border-radius: 20px;
         padding: 30px 60px 0;
+        @include _1440px() {
+            max-width: 992px;
+            padding: 30px 20px 0;
+        }
         .case_texts {
             max-width: 454px;
             width: 100%;
             margin: 0 auto;
+            @include _1440px() {
+                margin: 0 50px;
+            }
             h4 {
                 font-family: 'Raleway-Regular';
                 font-size: 24px;
@@ -921,6 +1024,10 @@ a {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
             border-radius: 87px;
             transition: .3s;
+            @include _1440px() {
+                width: 50px;
+                height: 50px;
+            }
             &:hover {
                 background: #0085FF;
                 color: #fff;

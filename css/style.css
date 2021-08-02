@@ -47,6 +47,13 @@ a {
   height: 100vh;
 }
 
+@media (max-width: 992px) {
+  #main_section {
+    height: auto;
+    padding-bottom: 70px;
+  }
+}
+
 #main_section header {
   padding: 30px 0;
 }
@@ -58,6 +65,20 @@ a {
   color: #000000;
   opacity: 0.5;
   margin-left: 28px;
+}
+
+@media (max-width: 992px) {
+  #main_section header .logo span {
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main_section header .logo span {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 10px;
+  }
 }
 
 #main_section header .header_contacts .soc_link {
@@ -73,6 +94,13 @@ a {
   background: #4ba6fc;
 }
 
+@media (max-width: 992px) {
+  #main_section header .header_contacts .soc_link {
+    width: 45px;
+    height: 45px;
+  }
+}
+
 #main_section header .header_contacts .header_phone {
   margin-left: 20px;
 }
@@ -82,6 +110,18 @@ a {
   font-size: 24px;
   line-height: 34px;
   color: #373737;
+}
+
+@media (max-width: 992px) {
+  #main_section header .header_contacts .header_phone a {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main_section header .header_contacts .header_phone a {
+    font-size: 18px;
+  }
 }
 
 #main_section header .header_contacts .header_phone span {
@@ -108,6 +148,12 @@ a {
   height: 80vh;
 }
 
+@media (max-width: 992px) {
+  #main_section .main_content {
+    height: auto;
+  }
+}
+
 #main_section .main_content .left_content h2 {
   font-family: 'Raleway-Bold';
   font-size: 37px;
@@ -116,10 +162,22 @@ a {
   max-width: 510px;
 }
 
+@media (max-width: 992px) {
+  #main_section .main_content .left_content h2 {
+    margin: 30px auto 0;
+  }
+}
+
 #main_section .main_content .left_content h2 span {
   color: #fff;
   background: #0085FF;
   padding: 0 5px;
+}
+
+@media (max-width: 992px) {
+  #main_section .main_content .left_content h2 {
+    text-align: center;
+  }
 }
 
 #main_section .main_content .left_content p {
@@ -130,6 +188,13 @@ a {
   opacity: 0.5;
   max-width: 365px;
   margin-top: 14px;
+}
+
+@media (max-width: 992px) {
+  #main_section .main_content .left_content p {
+    margin: 20px auto;
+    text-align: center;
+  }
 }
 
 #main_section .main_content .left_content p span {
@@ -161,6 +226,12 @@ a {
           box-shadow: 0px 16px 48px rgba(20, 59, 140, 0.9);
 }
 
+@media (max-width: 992px) {
+  #main_section .main_content .left_content button {
+    display: none !important;
+  }
+}
+
 #main_section .main_content .left_content button svg {
   margin: 3px 0 0 40px;
 }
@@ -181,11 +252,26 @@ a {
   padding: 0 20px;
 }
 
+@media (max-width: 1200px) {
+  #main_section .main_content .right_content .abs_elem {
+    min-height: auto;
+    padding: 10px 14px;
+    max-width: 260px;
+  }
+}
+
 #main_section .main_content .right_content .abs_elem h5 {
   font-family: 'Raleway-Bold';
   font-size: 16px;
   line-height: 24px;
   color: #5A5A5A;
+}
+
+@media (max-width: 1200px) {
+  #main_section .main_content .right_content .abs_elem h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 #main_section .main_content .right_content .abs_elem p {
@@ -194,6 +280,13 @@ a {
   line-height: 16px;
   color: #000000;
   opacity: 0.4;
+}
+
+@media (max-width: 1200px) {
+  #main_section .main_content .right_content .abs_elem p {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 #main_section .main_content .right_content .abs_elem .icon {
@@ -206,10 +299,14 @@ a {
   z-index: -1;
 }
 
+@media (max-width: 992px) {
+  #main_section .main_content .right_content .abs_elem1 {
+    display: none !important;
+  }
+}
+
 #main_section .main_content .right_content .abs_elem1 .icon {
   background: #FFF3D2;
-  width: 52px;
-  height: 52px;
   border-radius: 50%;
 }
 
@@ -218,11 +315,16 @@ a {
   right: -52px;
 }
 
+@media (max-width: 1440px) {
+  #main_section .main_content .right_content .abs_elem2 {
+    top: 50px;
+    right: -10px;
+  }
+}
+
 #main_section .main_content .right_content .abs_elem2 .icon {
   background: #87D6F7;
   border-radius: 10px;
-  width: 52px;
-  height: 52px;
 }
 
 #main_section .main_content .right_content .abs_elem3 {
@@ -233,8 +335,6 @@ a {
 #main_section .main_content .right_content .abs_elem3 .icon {
   background: #87D6F7;
   border-radius: 10px;
-  width: 52px;
-  height: 52px;
 }
 
 #main_section .main_content .right_content .abs_elem4 {
@@ -242,10 +342,21 @@ a {
   right: -20px;
 }
 
+@media (max-width: 992px) {
+  #main_section .main_content .right_content .abs_elem4 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  #main_section .main_content .right_content .abs_elem4 {
+    bottom: 90px;
+    right: 0px;
+  }
+}
+
 #main_section .main_content .right_content .abs_elem4 .icon {
   background: #FFF3D2;
-  width: 52px;
-  height: 52px;
   border-radius: 50%;
 }
 
@@ -264,6 +375,13 @@ a {
   margin: 0 auto 67px;
 }
 
+@media (max-width: 1440px) {
+  #second_section h3 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
 #second_section h3 strong {
   font: 'Raleway-Bold';
 }
@@ -276,6 +394,12 @@ a {
 #second_section .telephone img {
   width: 30%;
   margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  #second_section .telephone img {
+    width: 36%;
+  }
 }
 
 #second_section .telephone .answer_block {
@@ -495,6 +619,12 @@ a {
   text-align: center;
 }
 
+@media (max-width: 1440px) {
+  #cost_section .card .cost {
+    font-size: 30px;
+  }
+}
+
 #cost_section .card button {
   width: 300px;
   height: 65px;
@@ -606,6 +736,13 @@ a {
   color: #ECECEC;
 }
 
+@media (max-width: 1440px) {
+  #department_section .department_block {
+    max-width: 320px;
+    padding: 40px 30px 30px;
+  }
+}
+
 #department_section .department_block img {
   position: absolute;
   top: -40px;
@@ -656,6 +793,12 @@ a {
   z-index: 0;
 }
 
+@media (max-width: 1440px) {
+  #google_ads_section .gmail_img {
+    right: 20px;
+  }
+}
+
 #google_ads_section h3 {
   font-family: 'Raleway-Regular';
   font-size: 34px;
@@ -689,6 +832,14 @@ a {
   min-height: 600px;
   color: #353535;
   text-align: left;
+}
+
+@media (max-width: 1440px) {
+  #google_ads_section .googleAds_block .block_one {
+    max-width: 380px;
+    padding: 30px 20px;
+    min-height: 540px;
+  }
 }
 
 #google_ads_section .googleAds_block .block_one h5 {
@@ -740,9 +891,16 @@ a {
   min-height: 630px;
   background: #FFFFFF;
   border-radius: 15px 15px 0 0;
-  padding: 70px 40px 40px 80px;
+  padding: 60px 40px 40px 60px;
   text-align: left;
   z-index: 1;
+}
+
+@media (max-width: 1440px) {
+  #google_ads_section .googleAds_block .block_two {
+    padding: 40px 20px 30px 30px;
+    max-width: 740px;
+  }
 }
 
 #google_ads_section .googleAds_block .block_two h5 {
@@ -755,8 +913,14 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-#google_ads_section .googleAds_block .block_two .desc_block .mleft {
-  margin-left: 30px;
+#google_ads_section .googleAds_block .block_two .desc_block .first_ul {
+  margin-right: 40px;
+}
+
+@media (max-width: 1440px) {
+  #google_ads_section .googleAds_block .block_two .desc_block .first_ul {
+    margin-right: 20px;
+  }
 }
 
 #google_ads_section .googleAds_block .block_two .desc_block ul li {
@@ -775,8 +939,8 @@ a {
   position: relative;
   width: 350px;
   min-height: 96px;
-  margin: 30px auto 0;
-  padding-left: 80px;
+  margin: 60px 0 0;
+  padding-left: 35px;
 }
 
 #google_ads_section .googleAds_block .block_two .desc_block .cost h4 {
@@ -794,18 +958,19 @@ a {
   font-size: 20px;
   line-height: 36px;
   color: #0085FF;
+  margin-bottom: 0;
 }
 
 #google_ads_section .googleAds_block .block_two .desc_block .cost .img_one {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 40px;
+  left: -40px;
 }
 
 #google_ads_section .googleAds_block .block_two .desc_block .cost .img_two {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 40px;
 }
 
 #google_ads_section .googleAds_block .block_two .desc_block button {
@@ -1038,10 +1203,23 @@ a {
   padding: 30px 60px 0;
 }
 
+@media (max-width: 1440px) {
+  #cases_setion .cases_slider {
+    max-width: 992px;
+    padding: 30px 20px 0;
+  }
+}
+
 #cases_setion .cases_slider .case_texts {
   max-width: 454px;
   width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  #cases_setion .cases_slider .case_texts {
+    margin: 0 50px;
+  }
 }
 
 #cases_setion .cases_slider .case_texts h4 {
@@ -1097,6 +1275,14 @@ a {
   border-radius: 87px;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 1440px) {
+  #cases_setion .cases_slider .slick-prev,
+  #cases_setion .cases_slider .slick-next {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 #cases_setion .cases_slider .slick-prev:hover,
