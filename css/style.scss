@@ -362,6 +362,8 @@ a {
             min-height: 80px;
             padding: 16px;
             text-align: left;
+            opacity: 0;
+            transition: 0.8s ease 0s;
             @include _992px() {
                 margin: 25px auto;
             }
@@ -377,6 +379,70 @@ a {
                     font-family: 'Raleway-Regular';
                     color: #868686;
                 }
+            }
+        }
+        .answer_block1 {
+            transform: translate(-50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.2s;
+            }
+        }
+        .answer_block2 {
+            transform: translate(-50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.4s;
+            }
+        }
+        .answer_block3 {
+            transform: translate(-50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.6s;
+            }
+        }
+        .answer_block4 {
+            transform: translate(-50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.8s;
+            }
+        }
+        .answer_block5 {
+            transform: translate(50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.2s;
+            }
+        }
+        .answer_block6 {
+            transform: translate(50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.4s;
+            }
+        }
+        .answer_block7 {
+            transform: translate(50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.6s;
+            }
+        }
+        .answer_block8 {
+            transform: translate(50px, 0);
+            &.active__class {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                transition: 0.8s ease 0.8s;
             }
         }
         .tel_block_left {
