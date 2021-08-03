@@ -18,17 +18,17 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465; // этот порт может отличаться у других провайдеров
 
 $mail->setFrom('andrew.lisovoy@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('turgunbaaev@gmail.com');     // Кому будет уходить письмо 
+$mail->addAddress('dagojo7108@aline9.com');     // Кому будет уходить письмо 
 
 $mail->isHTML(true);                                 
 
 $mail->Subject = 'Заявка с сайта Digital';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone.;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo 'Error';
+    echo 'Error!';
 } else {
-    header('location: index.html');
+    echo 'Sent!';
 }
 ?>

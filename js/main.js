@@ -15,6 +15,30 @@ $(document).ready(function() {
             }
         ]
     });
+
+    // Input mask:
+    $('#phone').inputmask("phone", {
+        placeholder: '#',
+        showMaskOnHover: false,
+    });
+        
+        Inputmask.extendAliases({
+        my_phone: {
+            alias: "abstractphone",
+            phoneCodes: [{
+            mask: "+7(###) ###-##-##",
+            }],
+        }
+    });
+    $('#phone').inputmask("my_phone");
+
+    // Burger menu:
+    $('.burger_menu').click(function() {
+        $('.mobile_menu').toggleClass('show_menu');
+        $('.line1').toggleClass('active');
+        $('.line2').toggleClass('active');
+        $('.line3').toggleClass('active');
+    });
 });
 
 // Accordion:
