@@ -5,7 +5,15 @@ $(document).ready(function() {
         arrows: true,
         draggable: true,
         infinity: true,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
 });
 
