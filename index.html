@@ -839,10 +839,10 @@
                     </h5>
                 </div>
                 <div class="col-lg-8">
-                    <form action="">
+                    <form action="mail.php" method="POST">
                         <div class="row justify-content-end">
-                            <input class="input_field" type="text" placeholder="Ваше имя" required>
-                            <input class="input_field" type="tel" placeholder="+7 (___) ___-__-__" required>
+                            <input name="user_name" class="input_field" type="text" placeholder="Ваше имя" required>
+                            <input name="user_phone" class="input_field" type="tel" placeholder="+7 (___) ___-__-__" required>
                             <button type="submit">Отправить завку</button>
                             <div class="select_block d-flex align-items-center">
                                 <input type="checkbox">
