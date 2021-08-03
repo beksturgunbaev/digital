@@ -73,7 +73,7 @@ var Visible = function (target) {
         const time = value / speed;
             if(data < value) {
                 counter.innerText = Math.ceil(data + time);
-                setTimeout(animate, 70);
+                setTimeout(animate, 125);
             } else{
                 counter.innerText = value;
             }
