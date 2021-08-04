@@ -27,7 +27,7 @@ $mail->Body    = '' .$name . ' оставил заявку, его телефо�
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo 'Ошибка, повторите попытку позже!';
+    echo 'Error! Please, try it later...';
 } else {
     header('location: thank-you.html');
 }
