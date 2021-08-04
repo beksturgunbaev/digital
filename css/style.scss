@@ -137,6 +137,9 @@ a {
             color: #7B7B7B;
             margin: 12px 0;
             padding: 10px 30px;
+            &:focus {
+                outline: none;
+            }
         }
         form {
             button {

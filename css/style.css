@@ -147,6 +147,10 @@ a {
   padding: 10px 30px;
 }
 
+.form_modal .modal_content input:focus {
+  outline: none;
+}
+
 .form_modal .modal_content form button {
   max-width: 300px;
   width: 100%;
