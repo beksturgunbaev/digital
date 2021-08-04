@@ -2153,6 +2153,7 @@ a {
 
 #safely_section .safely_block .parent_cont img {
   margin-right: 24px;
+  width: 62px;
 }
 
 #safely_section .safely_block .parent_cont p, #safely_section .safely_block .parent_cont span {
