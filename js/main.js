@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
 
     // Input mask:
-    $('#phone').inputmask("phone", {
+    $('.phone_field').inputmask("phone", {
         placeholder: '#',
         showMaskOnHover: false,
     });
@@ -30,7 +30,7 @@ $(document).ready(function() {
             }],
         }
     });
-    $('#phone').inputmask("my_phone");
+    $('.phone_field').inputmask("my_phone");
 
     // Burger menu:
     $('.burger_menu').click(function() {
@@ -43,6 +43,18 @@ $(document).ready(function() {
         } else {
             $('html').css('overflow-y', 'auto');
         }
+    });
+
+    // Open modal:
+    $('.open_modal').click(function() {
+        $('.form_modal').addClass('_show');
+        $('.modal_content').addClass('active');
+        $('html').css('overflow-y', 'hidden');
+    });
+    $('.close_modal').click(function() {
+        $('.form_modal').removeClass('_show');
+        $('.modal_content').removeClass('active');
+        $('html').css('overflow-y', 'auto');
     });
 });
 
@@ -59,6 +71,7 @@ moreBtn.onclick = function() {
 function showMore() {
     moreBlocks.style.display = 'block';
     moreBtn.classList.add('active');
+    elemOpacity.classList.remove('opacity_show');
     elemOpacity.style.opacity = '1';
 }
 
@@ -72,6 +85,7 @@ const acc = document.getElementsByClassName("acc_btn");
 
 for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
+        this.classList.toggle('active');
         let panel = this.nextElementSibling;
         let icon = this.querySelector('span');
         if (panel.style.maxHeight) {
@@ -187,8 +201,7 @@ if(animItems.length > 0) {
 setTimeout(showAnimation, 800);
 
 // Current date:
-  /* функция добавления ведущих нулей */
-    /* (если число меньше десяти, перед числом добавляем ноль) */
+
     function zero_first_format(value)
     {
         if (value < 10)

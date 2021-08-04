@@ -4,8 +4,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
+$name = $_POST['name'];
+$phone = $_POST['phone'];
 
 //$mail->SMTPDebug = 3;                              
 
@@ -18,17 +18,17 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465; // этот порт может отличаться у других провайдеров
 
 $mail->setFrom('andrew.lisovoy@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('dagojo7108@aline9.com');     // Кому будет уходить письмо 
+$mail->addAddress('Lis0v0i@mail.ru');     // Кому будет уходить письмо 
 
 $mail->isHTML(true);                                 
 
-$mail->Subject = 'Заявка с сайта Digital';
+$mail->Subject = 'Заявка с сайта LISOVOY DIGITAL';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo 'Error!';
+    echo 'Ошибка, повторите попытку позже!';
 } else {
-    echo 'Sent!';
+    header('location: thank-you.html');
 }
 ?>
