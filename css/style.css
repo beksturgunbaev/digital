@@ -84,15 +84,14 @@ a {
 @media (max-width: 576px) {
   #main_section header .mobile_menu {
     display: block;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 150px;
     left: 0;
     width: 100%;
+    height: 100%;
     padding: 30px 15px;
     background: #fff;
-    z-index: 1;
-    -webkit-box-shadow: 10px 20px 33px rgba(0, 0, 0, 0.1);
-            box-shadow: 10px 20px 33px rgba(0, 0, 0, 0.1);
+    z-index: 3;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .4s;
@@ -103,11 +102,11 @@ a {
     visibility: visible;
   }
   #main_section header .mobile_menu ul {
-    padding: 30px 0;
+    padding: 50px 0;
   }
   #main_section header .mobile_menu ul li {
     list-style: none;
-    margin: 10px 0;
+    margin: 24px 0;
   }
   #main_section header .mobile_menu ul li a {
     margin: 20px 0;
@@ -982,6 +981,10 @@ a {
   }
 }
 
+#third_section .hidden_blocks {
+  display: none;
+}
+
 #third_section h3 {
   font-family: 'Raleway-Regular';
   font-size: 34px;
@@ -1010,10 +1013,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 30px;
-}
-
-#third_section .how_we_do_block:nth-child(4) {
-  opacity: .5;
 }
 
 @media (max-width: 768px) {
@@ -1064,30 +1063,75 @@ a {
   opacity: 0.7;
 }
 
-#third_section .how_we_do_block .icon1 {
+#third_section .how_we_do_block p {
+  font-family: 'Raleway-Regular';
+  font-size: 12px;
+  line-height: 20px;
+  color: #525252;
+  margin: 30px 0 0 60px;
+  max-width: 650px;
+}
+
+@media (max-width: 768px) {
+  #third_section .how_we_do_block p {
+    margin-left: 20px;
+  }
+}
+
+#third_section .how_we_do_block .icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   background: #F7BFD0;
 }
 
-#third_section .how_we_do_block .icon2 {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #AAC7F6;
-}
-
-#third_section .blue_block {
+#third_section .second_block {
   background: #D4E4FD;
 }
 
+#third_section .second_block .icon {
+  background: #AAC7F6;
+}
+
 #third_section .third_block {
+  opacity: .5;
   background: #FCEFDC;
 }
 
-#third_section .third_block .icon2 {
+#third_section .third_block .icon {
   background: #FDDEA8;
+}
+
+#third_section .fourth_block {
+  background: #E2F9F9;
+}
+
+#third_section .fourth_block .icon {
+  background: #AAF5F5;
+}
+
+#third_section .fifth_block {
+  background: #D4E4FD;
+}
+
+#third_section .fifth_block .icon {
+  background: #AAC7F6;
+}
+
+#third_section .sixth_block {
+  background: #DFFCDC;
+}
+
+#third_section .sixth_block .icon {
+  background: #BDE4B9;
+}
+
+#third_section .seventh_block {
+  background: #F6E2F9;
+}
+
+#third_section .seventh_block .icon {
+  background: #F8CDFF;
 }
 
 #third_section .show_more {
@@ -1096,6 +1140,20 @@ a {
   bottom: 74px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+#third_section .show_more.active {
+  display: none !important;
+}
+
+#third_section .show_more .load_svg {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#third_section .show_more .load_svg.active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media (max-width: 576px) {
@@ -2085,6 +2143,10 @@ a {
   font-family: 'Raleway-Bold';
 }
 
+#reports_section .reports_container .block_bottom ul #current_date2 {
+  margin-left: 0;
+}
+
 #reports_section .reports_container .block_bottom ul .elem {
   position: relative;
 }
@@ -2142,9 +2204,6 @@ a {
 #cases_setion .cases_slider {
   max-width: 1170px;
   margin: 0 auto;
-  background: #EFF8FF;
-  border-radius: 20px;
-  padding: 30px 60px 0;
 }
 
 @media (max-width: 1440px) {
@@ -2160,6 +2219,12 @@ a {
   }
 }
 
+#cases_setion .cases_slider .cases_slide {
+  background: #EFF8FF;
+  border-radius: 20px;
+  padding: 30px 60px 0;
+}
+
 @media (max-width: 768px) {
   #cases_setion .cases_slider .cases_slide .d-flex {
     -webkit-box-orient: vertical;
@@ -2169,25 +2234,25 @@ a {
   }
 }
 
-#cases_setion .cases_slider .case_texts {
+#cases_setion .cases_slider .cases_slide .case_texts {
   max-width: 454px;
   width: 100%;
   margin: 0 auto;
 }
 
 @media (max-width: 1440px) {
-  #cases_setion .cases_slider .case_texts {
+  #cases_setion .cases_slider .cases_slide .case_texts {
     margin: 0 50px;
   }
 }
 
 @media (max-width: 992px) {
-  #cases_setion .cases_slider .case_texts {
+  #cases_setion .cases_slider .cases_slide .case_texts {
     margin: 0 10px;
   }
 }
 
-#cases_setion .cases_slider .case_texts h4 {
+#cases_setion .cases_slider .cases_slide .case_texts h4 {
   font-family: 'Raleway-Regular';
   font-size: 24px;
   line-height: 36px;
@@ -2195,18 +2260,18 @@ a {
 }
 
 @media (max-width: 992px) {
-  #cases_setion .cases_slider .case_texts h4 {
+  #cases_setion .cases_slider .cases_slide .case_texts h4 {
     margin: 0 0 20px;
   }
 }
 
 @media (max-width: 768px) {
-  #cases_setion .cases_slider .case_texts h4 {
+  #cases_setion .cases_slider .cases_slide .case_texts h4 {
     font-size: 21px;
   }
 }
 
-#cases_setion .cases_slider .case_texts h6 {
+#cases_setion .cases_slider .cases_slide .case_texts h6 {
   font-family: 'Raleway-Bold';
   font-size: 16px;
   line-height: 175%;
@@ -2215,31 +2280,31 @@ a {
 }
 
 @media (max-width: 992px) {
-  #cases_setion .cases_slider .case_texts h6 {
+  #cases_setion .cases_slider .cases_slide .case_texts h6 {
     margin: 10px 0 0;
   }
 }
 
-#cases_setion .cases_slider .case_texts p {
+#cases_setion .cases_slider .cases_slide .case_texts p {
   font-family: 'Raleway-Regular';
   font-size: 16px;
   line-height: 175%;
   color: #383838;
 }
 
-#cases_setion .cases_slider .case_texts p span {
+#cases_setion .cases_slider .cases_slide .case_texts p span {
   font-family: 'Raleway-Bold';
   color: #0085FF;
 }
 
 @media (max-width: 992px) {
-  #cases_setion .cases_slider .case_texts p {
+  #cases_setion .cases_slider .cases_slide .case_texts p {
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 992px) {
-  #cases_setion .cases_slider .case_img {
+  #cases_setion .cases_slider .cases_slide .case_img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2250,12 +2315,12 @@ a {
 }
 
 @media (max-width: 768px) {
-  #cases_setion .cases_slider .case_img {
+  #cases_setion .cases_slider .cases_slide .case_img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #cases_setion .cases_slider .case_img img {
+  #cases_setion .cases_slider .cases_slide .case_img img {
     width: 50%;
   }
 }

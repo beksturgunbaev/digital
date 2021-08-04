@@ -38,8 +38,34 @@ $(document).ready(function() {
         $('.line1').toggleClass('active');
         $('.line2').toggleClass('active');
         $('.line3').toggleClass('active');
+        if($('.mobile_menu').hasClass('show_menu')) {
+            $('html').css('overflow-y', 'hidden');
+        } else {
+            $('html').css('overflow-y', 'auto');
+        }
     });
 });
+
+// Show more button:
+let moreBtn = document.querySelector('.show_more');
+let moreBlocks = document.querySelector('.hidden_blocks');
+let elemOpacity = document.querySelector('.third_block');
+let svgLoad = document.querySelector('.load_svg');
+
+moreBtn.onclick = function() {
+    svgLoad.classList.add('active');
+}
+
+function showMore() {
+    moreBlocks.style.display = 'block';
+    moreBtn.classList.add('active');
+    elemOpacity.style.opacity = '1';
+}
+
+moreBtn.addEventListener('click', () => {
+    setTimeout(showMore, 1000);
+}); 
+
 
 // Accordion:
 const acc = document.getElementsByClassName("acc_btn");
@@ -159,3 +185,30 @@ if(animItems.length > 0) {
 }
 
 setTimeout(showAnimation, 800);
+
+// Current date:
+  /* функция добавления ведущих нулей */
+    /* (если число меньше десяти, перед числом добавляем ноль) */
+    function zero_first_format(value)
+    {
+        if (value < 10)
+        {
+            value='0'+value;
+        }
+        return value;
+    }
+
+    /* функция получения текущей даты и времени */
+    function date_time()
+    {
+        var current_datetime = new Date();
+        var day = zero_first_format(current_datetime.getDate());
+        var month = zero_first_format(current_datetime.getMonth()+1);
+        var year = current_datetime.getFullYear();
+
+        return day+"."+month+"."+year+" ";
+    }
+
+    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+    document.getElementById('current_date').innerHTML = date_time();
+    document.getElementById('current_date2').innerHTML = date_time();
