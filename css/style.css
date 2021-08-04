@@ -2204,6 +2204,9 @@ a {
 #cases_setion .cases_slider {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 60px 0;
+  background: #EFF8FF;
+  border-radius: 20px;
 }
 
 @media (max-width: 1440px) {
@@ -2219,12 +2222,6 @@ a {
   }
 }
 
-#cases_setion .cases_slider .cases_slide {
-  background: #EFF8FF;
-  border-radius: 20px;
-  padding: 30px 60px 0;
-}
-
 @media (max-width: 768px) {
   #cases_setion .cases_slider .cases_slide .d-flex {
     -webkit-box-orient: vertical;
@@ -2234,16 +2231,16 @@ a {
   }
 }
 
+@media (max-width: 576px) {
+  #cases_setion .cases_slider .cases_slide .d-flex {
+    padding: 0 18px;
+  }
+}
+
 #cases_setion .cases_slider .cases_slide .case_texts {
   max-width: 454px;
   width: 100%;
-  margin: 0 auto;
-}
-
-@media (max-width: 1440px) {
-  #cases_setion .cases_slider .cases_slide .case_texts {
-    margin: 0 50px;
-  }
+  margin: 0 50px 70px;
 }
 
 @media (max-width: 992px) {

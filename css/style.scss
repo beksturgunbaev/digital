@@ -1593,6 +1593,9 @@ a {
     .cases_slider {
         max-width: 1170px;
         margin: 0 auto;
+        padding: 0 60px 0;
+        background: #EFF8FF;
+        border-radius: 20px;
         @include _1440px() {
             max-width: 992px;
             padding: 30px 20px 0;
@@ -1601,21 +1604,18 @@ a {
             max-width: 600px;
         }
         .cases_slide {
-            background: #EFF8FF;
-            border-radius: 20px;
-            padding: 30px 60px 0;
             .d-flex {
                 @include _768px() {
                     flex-direction: column;
+                }
+                @include _576px() {
+                    padding: 0 18px;
                 }
             }
             .case_texts {
                 max-width: 454px;
                 width: 100%;
-                margin: 0 auto;
-                @include _1440px() {
-                    margin: 0 50px;
-                }
+                margin: 0 50px 70px;
                 @include _992px() {
                     margin: 0 10px;
                 }
