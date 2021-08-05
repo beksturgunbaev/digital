@@ -1618,6 +1618,12 @@ a {
   }
 }
 
+@media (max-width: 576px) {
+  #bonuses_section .bonuses_img img {
+    width: 60%;
+  }
+}
+
 #bonuses_section .bonuses_block {
   width: 100%;
   min-height: 145px;

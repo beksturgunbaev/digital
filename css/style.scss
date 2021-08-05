@@ -1171,6 +1171,11 @@ a {
             justify-content: center !important;
             margin-bottom: 10px;
         }
+        img {
+            @include _576px() {
+                width: 60%;
+            }
+        }
     }
     .bonuses_block {
         width: 100%;
