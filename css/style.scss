@@ -2049,11 +2049,6 @@ a {
                     display: none;
                 }
             }
-            .about_img2 {
-                display: none;
-                @include _992px() {
-                    display: block;
-                }
                 @include _576px() {
                     width: 65%;
                     margin: 0 auto;
