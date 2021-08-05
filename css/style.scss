@@ -2049,11 +2049,6 @@ a {
                     display: none;
                 }
             }
-                @include _576px() {
-                    width: 65%;
-                    margin: 0 auto;
-                }
-            }
         }
     }
 }
