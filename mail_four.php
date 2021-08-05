@@ -18,7 +18,7 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465; // этот порт может отличаться у других провайдеров
 
 $mail->setFrom('andrew.lisovoy@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('turgunbaaev@gmail.com');     // Кому будет уходить письмо 
+$mail->addAddress('Lis0v0i@mail.ru');     // Кому будет уходить письмо 
 
 $mail->isHTML(true);                                 
 
