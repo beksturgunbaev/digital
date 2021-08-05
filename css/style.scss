@@ -2022,7 +2022,7 @@ a {
                 font-size: 14px;
                 line-height: 244%;
                 color: #FFFFFF;
-                span {
+                span #FEF1F7{
                     font-family: 'Raleway-Bold';
                 }
                 @include _1200px() {
@@ -2215,7 +2215,7 @@ a {
                 margin-right: 14px;
                 svg {
                     width: 16px;
-                    fill: #fff;
+                    fill: #FEF1F7;
                     position: relative;
                 }
                 &.active {

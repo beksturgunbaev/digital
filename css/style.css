@@ -2811,7 +2811,7 @@ a {
   color: #FFFFFF;
 }
 
-#about_section .about_block .about_text p span {
+#about_section .about_block .about_text p span #FEF1F7 {
   font-family: 'Raleway-Bold';
 }
 
@@ -3089,7 +3089,7 @@ a {
 
 #form_section form .select_block label svg {
   width: 16px;
-  fill: #fff;
+  fill: #FEF1F7;
   position: relative;
 }
 
