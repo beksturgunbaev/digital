@@ -48,13 +48,29 @@ $(document).ready(function() {
     // Open modal:
     $('.open_modal').click(function() {
         $('.form_modal').addClass('_show');
-        $('.modal_content').addClass('active');
         $('html').css('overflow-y', 'hidden');
     });
     $('.close_modal').click(function() {
         $('.form_modal').removeClass('_show');
         $('.modal_content').removeClass('active');
         $('html').css('overflow-y', 'auto');
+    });
+    $('.open_modal_one').click(function() {
+        $('.modal_one').addClass('active');
+    });
+    $('.open_modal_two').click(function() {
+        $('.modal_two').addClass('active');
+    });
+    $('.open_modal_three').click(function() {
+        $('.modal_three').addClass('active');
+    });
+    $('.open_modal_four').click(function() {
+        $('.modal_four').addClass('active');
+    });
+
+    // Checkbox:
+    $('.check_label').click(function() {
+        $(this).toggleClass('active');
     });
 });
 
