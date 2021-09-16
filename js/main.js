@@ -26,7 +26,7 @@ $(document).ready(function() {
         my_phone: {
             alias: "abstractphone",
             phoneCodes: [{
-            mask: "+7(###) ###-##-##",
+            mask: "+7 (###) ###-##-##",
             }],
         }
     });
