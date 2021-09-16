@@ -912,14 +912,8 @@ a {
 }
 
 #second_section .telephone img {
-  width: 30%;
+  width: 26%;
   margin: 0 auto;
-}
-
-@media (max-width: 1440px) {
-  #second_section .telephone img {
-    width: 36%;
-  }
 }
 
 @media (max-width: 992px) {

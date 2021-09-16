@@ -708,11 +708,8 @@ a {
     }
     .telephone {
         img {
-            width: 30%;
+            width: 26%;
             margin: 0 auto;
-            @include _1440px() {
-                width: 36%;
-            }
             @include _992px() {
                 display: none;
             }
