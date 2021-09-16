@@ -261,8 +261,8 @@ a {
     z-index: 3;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .mobile_menu.show_menu {
     opacity: 1;

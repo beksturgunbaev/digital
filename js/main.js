@@ -44,6 +44,13 @@ $(document).ready(function() {
             $('html').css('overflow-y', 'auto');
         }
     });
+    $('.mob_links').click(function() {
+        $('.mobile_menu').removeClass('show_menu');
+        $('.line1').removeClass('active');
+        $('.line2').removeClass('active');
+        $('.line3').removeClass('active');
+        $('html').css('overflow-y', 'auto');
+    });
 
     // Open modal:
     $('.open_modal').click(function() {
