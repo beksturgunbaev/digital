@@ -314,7 +314,7 @@ a {
   left: 0;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1600px) {
   #main_section .line_img {
     display: none;
   }

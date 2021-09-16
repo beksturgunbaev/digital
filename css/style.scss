@@ -37,11 +37,11 @@ a {
 // end
 
 // Mixins for media queries:
+@mixin _1600px {
+    @media (max-width: 1600px) { @content; }
+}
 @mixin _1440px {
     @media (max-width: 1440px) { @content; }
-}
-@mixin _1360px {
-    @media (max-width: 1360px) { @content; }
 }
 @mixin _1200px {
     @media (max-width: 1200px) { @content; }
@@ -282,7 +282,7 @@ a {
         position: absolute;
         top: 170px;
         left: 0;
-        @include _1360px() {
+        @include _1600px() {
             display: none;
         }
     }
