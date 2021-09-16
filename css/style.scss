@@ -295,7 +295,7 @@ a {
         .logo {
             img {
                 @include _576px() {
-                    width: 70px;
+                    width: 80%;
                 }
             }
             .burger_menu {

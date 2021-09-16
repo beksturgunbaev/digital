@@ -333,7 +333,7 @@ a {
 
 @media (max-width: 576px) {
   #main_section header .logo img {
-    width: 70px;
+    width: 80%;
   }
 }
 
